@@ -1,0 +1,50 @@
+.myInput{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+.myInput > .draft{
+    color: #353535;
+    height: 40px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    vertical-align: middle;
+}
+.myInput > .input{
+    padding: 10px;
+    font-size: 14px;
+}
+.myInput > textarea{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+    min-height: 60px;
+    border-radius: 4px;
+}
+
+.myInput > input[type='text']{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+}
+
+/* radio */
+.input-radio input, .input-checkbox input{
+    display: none;
+}
+.input-radio >.draft:before, .input-checkbox >.draft:before{
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba(0,0,0,0.2);
+    content: "";
+    display: block;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+input:checked + .draft:before{
+    background: #ffea5d;
+    border-color: #f9d765;
+}
